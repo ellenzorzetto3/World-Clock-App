@@ -13,7 +13,13 @@ header {
 h1 {
   text-align: center;
   color: white;
-  font-size: 90px;
+  font-size: 60px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  text-align: center;
+  color: #b1aeda;
 }
 
 .box2 {
@@ -54,6 +60,7 @@ h1 {
   border-radius: 25px;
   font-size: 16px;
   padding: 15px 20px;
+  color: white;
 }
 
 .selector {
@@ -87,6 +94,7 @@ h1 {
 .cityHour {
   margin-right: -150px;
   font-size: 40px;
+  font-weight: 700;
 }
 
 .amPm {
@@ -98,6 +106,7 @@ h1 {
   margin-top: -10px;
   color: white;
 }
-footer {
-  text-align: center;
+
+.link {
+  text-decoration: none;
 }
