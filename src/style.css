@@ -25,6 +25,10 @@ h1 {
   box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
+.itens {
+  display: flex;
+}
+
 .select1 {
   background-color: #faf7fe;
   width: 95%;
