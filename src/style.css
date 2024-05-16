@@ -1,11 +1,11 @@
 header {
   background-color: #faf7fe;
   width: 50%;
-  padding: 20px 15px 50px;
+  padding: 10px 15px;
   background-image: linear-gradient(to right, #b0adda, #f3e0e2);
   border-radius: 10px;
   display: block;
-  margin: 100px auto;
+  margin: 40px auto;
   margin-bottom: 0;
   box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.2);
 }
@@ -13,6 +13,7 @@ header {
 h1 {
   text-align: center;
   color: white;
+  font-size: 90px;
 }
 
 .box2 {
@@ -30,11 +31,10 @@ h1 {
 }
 
 .select1 {
-  background-color: #faf7fe;
-  width: 95%;
-  padding: 20px 15px 50px;
-  background-image: linear-gradient(to right, #b0adda, #f3e0e2);
-  border-radius: 10px;
+  background-color: linear-gradient(to right, #b0adda, #f3e0e2);
+  width: 100%;
+  padding: 5px 5px 5px;
+  border-radius: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,15 +47,57 @@ h1 {
 }
 
 .cities {
-  width: 50%;
+  width: 100%;
   text-align: left;
-  background-color: white;
+  background-color: #cdc3dd;
   border: none;
   border-radius: 25px;
   font-size: 16px;
   padding: 15px 20px;
 }
 
+.selector {
+  color: white;
+}
+.box3 {
+  background-color: #f1dee2;
+  width: 95%;
+  padding: 15px;
+  background-image: linear-gradient(to right, #b0adda, #f3e0e2);
+  border-radius: 15px;
+  margin: 20px 5px;
+}
+
+.cityNames {
+  display: flex;
+  justify-content: space-between;
+}
+.cityName,
+.cityHour {
+  margin: 5px 100px;
+  color: white;
+}
+
+.cityName {
+  margin-left: -150px;
+  font-size: 40px;
+  padding-bottom: -40px;
+}
+
+.cityHour {
+  margin-right: -150px;
+  font-size: 40px;
+}
+
+.amPm {
+  font-size: 20px;
+}
+
+.cityDate {
+  margin-left: 3px;
+  margin-top: -10px;
+  color: white;
+}
 footer {
   text-align: center;
 }
