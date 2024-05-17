@@ -14,5 +14,27 @@ function updateTime() {
   rioElementTime.innerHTML = rioTime.format("h:mm:ss[<small>] a[</small>]");
 }
 
+function updateCity(event) {
+  let cityTimeZone = event.target.value;
+  let cityName = cityTimeZone
+    .replace("Sao_Paulo", "Rio de Janeiro")
+    .replace("_", " ")
+    .split("/")[1];
+  let cityTime = moment().tz(cityTimeZone);
+  let citiesSelector = document.querySelector("#cityContent");
+  citiesSelector.innerHTML = `<div class="city" id="CityElement">
+          <div class="city-info">
+            <h2>${cityName}</h2>
+            <div class="date">${cityTime.format("MMMM, Do YYYY")}</div>
+          </div>
+          <div class="time">${cityTime.format(
+            "h:mm:ss[<small>] a[</small>]"
+          )}</div> </div>
+       `;
+}
+
 updateTime();
 setInterval(updateTime, 1000);
+
+let citySelectElement = document.querySelector("#cities");
+citySelectElement.addEventListener("change", updateCity);
