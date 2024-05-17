@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
     <title>World Clocks</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -15,41 +17,28 @@
       <div class="box2">
         <div class="select1">
                   <select class="cities" id="cities">
-            <option value=" " class="selector">Select</option>
+            <option value=" " class="selector">Select 🕧</option>
             <option value="1">New York</option>
             <option value="2">Lisbon</option>
             <option value="3">São Paulo</option>
           </select>
         </div>
-        <div class="box3">
-       <div class="cityNames">
-            <p  id="cities1">
-            <div class="cityName">New York</div>
-           <span class="cityHour">2:47 <span class="amPm">pm</span></span>
-            </p>
-                    </div>
-                    <div class="cityDate">May 16th 2024</div>
-      </div>
-      
-      <div class="box3">
-       <div class="cityNames">
-            <p  id="cities1">
-            <div class="cityName">New York</div>
-           <span class="cityHour">2:47 <span class="amPm">pm</span></span>
-            </p>
-                    </div>
-                    <div class="cityDate">May 16th 2024</div>
-      </div>
-      <div class="box3">
-       <div class="cityNames">
-            <p  id="cities1">
-            <div class="cityName">New York</div>
-           <span class="cityHour">2:47 <span class="amPm">pm</span></span>
-            </p>
-                    </div>
-                    <div class="cityDate">May 16th 2024</div>
-      </div>
-      </div>
+        <div class="city"id="LAElement">
+  <div class="city-info">
+    <h2>Los Angeles 🇺🇸</h2>
+    <div class="date">August 15th 2022</div>
+  </div>
+  <div class="time">
+    1:48:15 </div>
+</div>
+<div class="city" id="RioElement">
+  <div class="city-info">
+    <h2>Rio de Janeiro 🇧🇷</h2>
+    <div class="date">August 15th 2022</div>
+  </div>
+  <div class="time">
+    1:48:15 </div>
+</div>
       <footer>
         This project was coded by
         <a class="link"

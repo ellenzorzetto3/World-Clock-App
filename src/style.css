@@ -38,7 +38,7 @@ footer {
 
 .select1 {
   background-color: linear-gradient(to right, #b0adda, #f3e0e2);
-  width: 100%;
+  width: 95%;
   padding: 5px 5px 5px;
   border-radius: 25px;
   display: flex;
@@ -59,15 +59,16 @@ footer {
   border: none;
   border-radius: 25px;
   font-size: 16px;
-  padding: 15px 20px;
+  padding: 20px 20px;
   color: white;
 }
 
 .selector {
   color: white;
 }
+
 .box3 {
-  background-color: #f1dee2;
+  background-color: black;
   width: 95%;
   padding: 15px;
   background-image: linear-gradient(to right, #b0adda, #f3e0e2);
@@ -75,37 +76,33 @@ footer {
   margin: 20px 5px;
 }
 
-.cityNames {
+.city {
   display: flex;
   justify-content: space-between;
-}
-.cityName,
-.cityHour {
-  margin: 5px 100px;
-  color: white;
-}
-
-.cityName {
-  margin-left: -150px;
-  font-size: 40px;
-  padding-bottom: -40px;
+  align-items: center;
+  margin: 10px 0;
+  padding: 30px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
 }
 
-.cityHour {
-  margin-right: -150px;
-  font-size: 40px;
-  font-weight: 700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+.city:last-child {
+  border: none;
 }
 
-.amPm {
-  font-size: 20px;
+.city-info {
+  display: flex;
+  flex-direction: column;
 }
 
-.cityDate {
-  margin-left: 3px;
+.date {
+  opacity: 0.7;
   margin-top: -10px;
-  color: white;
+}
+
+.time {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: right;
 }
 
 .link {
