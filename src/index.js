@@ -16,6 +16,9 @@ function updateTime() {
 
 function updateCity(event) {
   let cityTimeZone = event.target.value;
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess().replace("Sao_Paulo", "Concórdia");
+  }
   let cityName = cityTimeZone
     .replace("Sao_Paulo", "Rio de Janeiro")
     .replace("_", " ")
