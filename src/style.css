@@ -22,6 +22,9 @@ footer {
   color: #b1aeda;
 }
 
+.container {
+  font-family: "Open Sans", sans-serif;
+}
 .box2 {
   background-color: #faf7fe;
   width: 50%;
@@ -103,6 +106,24 @@ footer {
   font-size: 48px;
   font-weight: bold;
   text-align: right;
+}
+
+.updateButton {
+  background-color: #b3afdb;
+  color: white;
+  border: none;
+  font-size: 15px;
+  padding: 20px;
+  border-radius: 25px;
+  display: block;
+  margin: 50px auto;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.updateButton:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
 }
 
 .link {

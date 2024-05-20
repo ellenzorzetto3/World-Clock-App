@@ -41,3 +41,10 @@ setInterval(updateTime, 1000);
 
 let citySelectElement = document.querySelector("#cities");
 citySelectElement.addEventListener("change", updateCity);
+
+function turnBack() {
+  location.reload();
+}
+
+let updateButton = document.querySelector("#updateButton");
+updateButton.addEventListener("click", turnBack);
